@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Corriente y Potencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Corriente y Potencia</h1>
+
+        <!-- Input para el voltaje -->
+        <label for="voltaje">Voltaje (V):</label>
+        <input type="number" id="voltaje" required> 
+        
+        <!-- Input para la primera resistencia -->
+        <label for="resistencia1">Resistencia 1 (Ω):</label>
+        <input type="number" id="resistencia1" required>
+        
+        <!-- Input para la segunda resistencia -->
+        <label for="resistencia2">Resistencia 2 (Ω):</label>
+        <input type="number" id="resistencia2" required>
+
+        <!-- Selector para el tipo de conexión -->
+        <label for="conexion">Conexión:</label>
+        <select id="conexion">
+            <option value="serie">Serie</option>
+        </select>
+
+        <button onclick="CalcularCorrienteYPotencia()">Calcular</button>
+
+        <div id="resultado">
+            <p id="corriente">Corriente: </p>
+            <p id="potencia">Potencia: </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
